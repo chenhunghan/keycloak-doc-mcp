@@ -1,6 +1,6 @@
 {
   "name": "keycloak-doc-mcp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "MCP sever for fetching latest Keyclaok documentation in LLM friendly format",
   "homepage": "https://github.com/chenhunghan/keycloak-doc-mcp#readme",
   "bugs": {
