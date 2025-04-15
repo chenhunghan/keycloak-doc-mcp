@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/chenhunghan/keycloak-doc-mcp/compare/v1.1.0...v1.1.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* add more resources and a new tool to fetch release notes ([984ad63](https://github.com/chenhunghan/keycloak-doc-mcp/commit/984ad63d9284f3f7dbc897e11a51c14dceecce65))
+
 ## [1.1.0](https://github.com/chenhunghan/keycloak-doc-mcp/compare/v1.0.0...v1.1.0) (2025-04-15)
 
 
