@@ -1,0 +1,47 @@
+{
+  "name": "keycloak-doc-mcp",
+  "version": "0.0.1",
+  "description": "MCP sever for fetching latest Keyclaok documentation in LLM friendly format",
+  "homepage": "https://github.com/chenhunghan/keycloak-doc-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/chenhunghan/keycloak-doc-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenhunghan/keycloak-doc-mcp.git"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Hung-Han Chen",
+  "type": "module",
+  "main": "./dist/index.js",
+  "keywords": [
+    "mcp",
+    "keycloak"
+  ],
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "keycloak-doc-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p .",
+    "test": "npm run test:types && npm run test:lint && npm run test:format",
+    "test:format": "prettier --write -c .",
+    "test:lint": "eslint .",
+    "test:types": "tsc -p . --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
+    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  }
+}
