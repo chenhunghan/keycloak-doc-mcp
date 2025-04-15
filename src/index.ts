@@ -21,7 +21,7 @@ for (const doc of docs) {
   server.resource(doc.resourceName, doc.resourceUri, async (uri) => {
     const res = await fetch(doc.resourceUrl);
     const text = await res.text();
-    return { contents: [{ uri: uri.href, text }] };
+    return { contents: [{ uri: uri.href, text, mimeType: "text/markdown", name: doc.resourceName }] };
   });
 }
 
